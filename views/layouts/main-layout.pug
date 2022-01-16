@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+    block head
+        - let pageTitle =  "This title was set from The Layout!"
+        head
+            include ../blocks/head.pug
+            title #{pageTitle}
+    body
+        block header
+        block content
+        block footer

@@ -1,0 +1,30 @@
+.header {
+	// display: none;
+	width: 100%;
+	top: 60px;
+	position: fixed;
+	z-index: $header-z;
+	&__wrapper {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.menu-hamburger {
+		cursor: pointer;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.icon {
+		font-size: 30px;
+		line-height: 24px;
+	}
+	.fontawesome-icon.bars {
+		color: #372c3c;
+		@extend .fas;
+		&::before {
+			content: fa-content($fa-var-bars);
+		}
+	}
+	@include mobile {
+		top: 20px;
+	}
+}

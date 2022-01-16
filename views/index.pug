@@ -1,0 +1,117 @@
+extends layouts/main-layout.pug
+block header
+    include blocks/header.pug
+block content
+    main.main-wrapper
+        include blocks/banner.pug
+        section.section.intro.section-gap
+            .container 
+                .section__header 
+                    .section__header-text A CREATIVE PORTFOLIO TEMPLATE
+                    .section__header-decor
+                        span.dotted
+                        .section__header-icon
+                            i.fontawesome-icon.location-arrow
+                        span.dotted
+                .section__content 
+                    .row
+                        p.text.col-sm-12.col-md-8.offset-md-2
+                            | This is a very long and boring paragraph that spans multiple lines.
+                            | Suddenly there is a 
+                            strong strongly worded phrase 
+                            | that cannot be 
+                            em ignored. 
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        section.section.generic.section-gap 
+            .container 
+                .section__header 
+                    .section__header-text LOVE WHAT YOU DO, AND YOU’LL DO IT WELL
+                    .section__header-decor
+                        span.dotted
+                        .section__header-icon
+                            i.fontawesome-icon.location-arrow
+                        span.dotted
+                .section__content 
+                    .service
+                        .row
+                            .service__item.col-12.col-md-6.offset-md-3.col-lg-4.offset-lg-0
+                                .service__item-wrapper
+                                    .service__item-icon
+                                           i.fontawesome-icon.laptop
+                                    h3.service__item-title DIGITAL DESIGN
+                                    p.service__item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                            .service__item.col-12.col-md-6.offset-md-3.col-lg-4.offset-lg-0
+                                .service__item-wrapper
+                                    .service__item-icon
+                                          i.fontawesome-icon.code
+                                    h3.service__item-title WEB DEVEPOPMENT
+                                    p.service__item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                            .service__item.col-12.col-md-6.offset-md-3.col-lg-4.offset-lg-0
+                                .service__item-wrapper
+                                    .service__item-icon
+                                          i.fontawesome-icon.heart
+                                    h3.service__item-title WE LOVE YOU
+                                    p.service__item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        section.section.iphone
+            .section__background-left
+            .section__background-right
+        section.section.counter 
+            .container
+                .section__header
+                    .section__header-text
+                        .upper I GOT 99 PROBLEMS
+                        .lower
+                            | BUT 
+                            strong DESIGN 
+                            | 'ANT ONE
+                    .section__header-decor
+                        .section__header-icon
+                            i.fontawesome-icon.chevron-down
+        section.section.portfolio.section-gap
+            .container 
+                .section__content
+                    .portfolio__wrapper
+                        .row 
+                            .portfolio__item.col-12.col-md-6.offset-md-3.col-lg-4.offset-lg-0
+                                .portfolio__item-wrapper 
+                                    .portfolio__item-avatar
+                                        .overlay
+                                            .overlay__icon
+                                                i.fontawesome-icon.search
+                                                div View more
+                                        img(src="./images/porfolio1.jpg", alt="")
+                                    a(href="#").portfolio__item-title CREATIVE MINDS
+                                    p.portfolio__item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                            .portfolio__item.col-12.col-md-6.offset-md-3.col-lg-4.offset-lg-0
+                                .portfolio__item-wrapper 
+                                    .portfolio__item-avatar
+                                        .overlay
+                                            .overlay__icon 
+                                                i.fontawesome-icon.search
+                                                div View more
+                                        img(src="./images/porfolio2.jpg", alt="")
+                                    a(href="#").portfolio__item-title THINK ALIVE
+                                    p.portfolio__item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                            .portfolio__item.col-12.col-md-6.offset-md-3.col-lg-4.offset-lg-0
+                                .portfolio__item-wrapper 
+                                    .portfolio__item-avatar
+                                        .overlay
+                                            .overlay__icon
+                                                i.fontawesome-icon.search
+                                                div View more
+                                        img(src="./images/porfolio3.jpg", alt="")
+                                    a(href="#").portfolio__item-title PIXEL PERFECT
+                                    p.portfolio__item-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+        section.section.subcribes.section-gap
+            .container 
+                .section__header.reverse-direction
+                    .section__header-text SUBSCRIBE TO STAY IN THE LOOP
+                    .section__header-decor
+                        .section__header-icon
+                            i.fontawesome-icon.paper-plane
+                .section__content 
+                    form.subcribes__form
+                        input.subcribes__input(type="text")
+                        button.subcribes__button(type="submit") send
+block footer 
+    include blocks/footer.pug
